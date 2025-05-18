@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    @apply light;
+  }
+
+  .light {
+    --bg-primary: 255 255 255;
+    --text-primary: 17 24 39;
+  }
+
+  .dark {
+    --bg-primary: 17 24 39;
+    --text-primary: 255 255 255;
+  }
+
+  body {
+    @apply bg-[rgb(var(--bg-primary))] text-[rgb(var(--text-primary))];
+  }
+}
